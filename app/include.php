@@ -691,12 +691,11 @@ class Auth {
     }
 
     public static function requireLogin(){
-
         if(! self::check()){
             if(self::$LOGIN_PAGE === null){
                 self::$LOGIN_PAGE = Env::get("LOGIN_PAGE", "login");
             }
-            header('Location: ' . Url::root(self::$LOGIN_PAGE));
+            Response::redirect(Url::root(self::$LOGIN_PAGE));
             exit;
         }
     }

@@ -4,6 +4,7 @@ if(!defined("ABSPATH")) { define("ABSPATH", __DIR__); }
 include_once "app/include.php";
 include_once "app/functions.php";
 
+session_start();
 if(Auth::check()){
     $menu = json_decode(file_get_contents(Path::app( "menu-user.json" )), true);
 }else{
