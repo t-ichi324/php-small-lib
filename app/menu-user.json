@@ -1,0 +1,14 @@
+[
+{
+    "page": "home",
+    "title": "HOME"
+},
+{
+    "page": "setting",
+    "title": "設定"
+},
+{
+    "page": "logout",
+    "title": "ログアウト"
+}
+]
